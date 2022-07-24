@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# downloads .profile custom functions
+wget -qO- https://raw.githubusercontent.com/et994/kali-config/main/kali-custom-profile-functions | sudo tee --append ~/.profile
+
 # updates the repositories
 sudo apt update
 
