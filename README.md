@@ -1,7 +1,7 @@
 ## Kickstart your Kali
 
 ### Introduction
-These are my personal tweaks I need in order to make the best of Kali Linux.
+These are nothing but personal tweaks I need in order to make the best of Kali Linux after a fresh install.
 
 ### Setup
 Download and append to your `.profile` all the custom functions:
