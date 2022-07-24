@@ -1,3 +1,3 @@
 ```sh
-wget -qO- https://raw.githubusercontent.com/et994/kali-config/main/kali-custom-profile-functions | sudo tee --append ~/.profile
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/et994/kali-linux-kickstart/main/kickstart-kali.sh)"
 ```
