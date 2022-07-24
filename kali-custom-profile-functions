@@ -1,0 +1,17 @@
+# updates target IP address
+function target() {
+    sudo sed --in-place '/target/d' /etc/hosts
+    echo "$1\ttarget" | sudo tee --append /etc/hosts
+}
+
+# attacks the target IP address
+function attack() {
+    nmap -A -T4 $1 -oX "$1-nmap-scan.xml"
+    xsltproc "$1-nmap-scan.xml" -o "$1-nmap-scan.html" 
+    firefox-esr "$1-nmap-scan.html" &
+}
+
+# starts postgresql, initialize msfdb and starts msfconsole
+function msfinit() {
+    sudo service postgresql start && sudo msfdb init && sudo msfconsole
+}
