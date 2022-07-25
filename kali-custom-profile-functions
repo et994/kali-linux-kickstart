@@ -1,3 +1,4 @@
+
 # updates target IP address
 function target() {
     sudo sed --in-place '/target/d' /etc/hosts
