@@ -42,6 +42,7 @@ Example:  `sudo apt update && sudo apt install -y gobuster xclip ghidra steghide
 ```sh
 wget -qO- https://raw.githubusercontent.com/et994/kali-config/main/kali-custom-profile-functions | sudo tee --append ~/.profile &>/dev/null
 ```
+Remember always to `source ~/.profile` after editing the `~/.profile`.
 
 ### A further look to custom functions
 
