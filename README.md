@@ -58,3 +58,6 @@ The **audit** function purpose is to scan an IP address using _nmap_, converting
 Usage: `audit 10.10.123.234` or in combination with the **target** function, after mapping an IP address with the **target** hostname: `audit target`.
 
 The **msfinit** is just a one-line command to start the **msfconsole** after having initialized the **msfdb**. It is useful for the first run.
+
+# Useful stuff
+[SSH GitHub configuration](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
