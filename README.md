@@ -40,7 +40,7 @@ Example:  `sudo apt update && sudo apt install -y gobuster xclip ghidra steghide
 
 ## Import `~/.custom_functions_profile` custom functions
 ```sh
-wget -qO- https://raw.githubusercontent.com/et994/kali-config/main/kali-custom-profile-functions | sudo tee --append ~/.custom_functions_profile &>/dev/null
+wget -qO- https://raw.githubusercontent.com/et994/kali-linux-kickstart/main/kali-custom-functions-profile | sudo tee --append ~/.custom_functions_profile &>/dev/null
 ```
 
 Now we need to auto source the file if it exists:
