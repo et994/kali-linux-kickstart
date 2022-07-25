@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# permanently sets keyboard layout
+# permanently sets keyboard layout to italian
 L='it' && sudo sed -i 's/XKBLAYOUT=\"\w*"/XKBLAYOUT=\"'$L'\"/g' /etc/default/keyboard
 
 # import .profile custom functions
