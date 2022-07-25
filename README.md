@@ -19,7 +19,7 @@ sudo passwd kali
 ```sh
 sudo apt update && sudo apt install -y space_separated_packages
 ```
-Example:  'sudo apt update && sudo apt install -y gobuster xclip ghidra hashid steghide`
+Example:  `sudo apt update && sudo apt install -y gobuster xclip ghidra hashid steghide`
 
 ## Install **oh-my-zsh**
 ```sh
