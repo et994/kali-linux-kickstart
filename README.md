@@ -59,5 +59,12 @@ Usage: `audit 10.10.123.234` or in combination with the **target** function, aft
 
 The **msfinit** is just a one-line command to start the **msfconsole** after having initialized the **msfdb**. It is useful for the first run.
 
+## Enable root user on Kali Linux (_not recommended_)
+
+```sh
+sudo apt update && sudo apt install -y kali-root-login
+sudo passwd root
+```
+
 # Useful stuff
 [SSH GitHub configuration](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
