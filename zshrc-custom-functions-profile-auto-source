@@ -1,0 +1,5 @@
+#
+# Custom profile functions
+if [ -f ~/.custom_functions_profile ]; then
+        . ~/.custom_functions_profile;
+fi
