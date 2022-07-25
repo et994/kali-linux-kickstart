@@ -1,6 +1,14 @@
 # Kali Linux configuration
 
 ## Set keyboard layout
+
+### Set keyboard layout for the current session
+Replace `it` with your locale (eg. `fr` for french layout).
+```sh
+setxkbmap it
+```
+
+### Set keyboard layout permanently after reboot
 Replace `L='it'` with your locale (eg. `L='de'` for german layout), then reboot:
 ```sh
 L='it' && sudo sed -i 's/XKBLAYOUT=\"\w*"/XKBLAYOUT=\"'$L'\"/g' /etc/default/keyboard
