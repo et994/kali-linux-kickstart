@@ -9,6 +9,12 @@ L='it' && sudo sed -i 's/XKBLAYOUT=\"\w*"/XKBLAYOUT=\"'$L'\"/g' /etc/default/key
 sudo passwd kali
 ```
 
+## Update repositories and install missing packages
+```sh
+sudo apt update && sudo apt install -y space_separated_packages
+```
+Example:  'sudo apt update && sudo apt install -y gobuster xclip ghidra hashid steghide`
+
 ## Install **oh-my-zsh**
 ```sh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -18,9 +24,3 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 ```sh
 wget -qO- https://raw.githubusercontent.com/et994/kali-config/main/kali-custom-profile-functions | sudo tee --append ~/.profile &>/dev/null
 ```
-
-## Update repositories and install missing packages
-```sh
-sudo apt update && sudo apt install -y space_separated_packages
-```
-Example:  'sudo apt update && sudo apt install -y gobuster xclip ghidra hashid steghide`
