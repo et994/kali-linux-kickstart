@@ -1,3 +1,5 @@
+# Kali Linux configuration
+
 ## Set keyboard layout
 Replace `L='it'` with your locale (eg. `L='de'` for german layout), then reboot:
 ```sh
@@ -9,6 +11,8 @@ L='it' && sudo sed -i 's/XKBLAYOUT=\"\w*"/XKBLAYOUT=\"'$L'\"/g' /etc/default/key
 sudo passwd kali
 ```
 
+# Tools
+
 ## Update repositories and install missing packages
 ```sh
 sudo apt update && sudo apt install -y space_separated_packages
@@ -19,6 +23,8 @@ Example:  'sudo apt update && sudo apt install -y gobuster xclip ghidra hashid s
 ```sh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
+
+# Customization
 
 ## Import `~/.profile` custom functions
 ```sh
