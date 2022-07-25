@@ -1,6 +1,9 @@
 #!/bin/bash
 
-# downloads .profile custom functions
+# permanently sets keyboard layout
+L='it' && sudo sed -i 's/XKBLAYOUT=\"\w*"/XKBLAYOUT=\"'$L'\"/g' /etc/default/keyboard
+
+# import .profile custom functions
 wget -qO- https://raw.githubusercontent.com/et994/kali-config/main/kali-custom-profile-functions | sudo tee --append ~/.profile
 
 # updates the repositories
