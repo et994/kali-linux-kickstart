@@ -23,16 +23,16 @@ sudo passwd kali
 
 # Tools
 
+## Install **oh-my-zsh**
+```sh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
 ## Update repositories and install missing packages
 ```sh
 sudo apt update && sudo apt install -y space_separated_packages
 ```
 Example:  `sudo apt update && sudo apt install -y gobuster xclip ghidra steghide`
-
-## Install **oh-my-zsh**
-```sh
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
 
 ---
 
