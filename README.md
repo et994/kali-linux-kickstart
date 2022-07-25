@@ -38,11 +38,15 @@ Example:  `sudo apt update && sudo apt install -y gobuster xclip ghidra steghide
 
 # Customization
 
-## Import `~/.profile` custom functions
+## Import `~/.custom_functions_profile` custom functions
 ```sh
 wget -qO- https://raw.githubusercontent.com/et994/kali-config/main/kali-custom-profile-functions | sudo tee --append ~/.custom_functions_profile &>/dev/null
 ```
-Remember always to `source ~/.profile` after editing the `~/.profile`.
+
+Now we need to auto source the file if it exists:
+```sh
+wget -qO- https://raw.githubusercontent.com/et994/kali-linux-kickstart/main/zshrc-custom-functions-profile-auto-source | sudo tee --append ~/.zshrc &>/dev/null
+```
 
 ### A further look to custom functions
 
