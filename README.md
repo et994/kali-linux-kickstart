@@ -42,3 +42,5 @@ For example, after executing `target 10.10.123.234` we can ping that IP address 
 
 The **audit** function purpose is to scan an IP address using _nmap_, converting the output to an HTML file and viewing it using _firefox-esr_.
 Usage: `audit 10.10.123.234` or in combination with the **target** function, after mapping an IP address with the **target** hostname: `audit target`.
+
+The **msfinit** is just a one-line command to start the **msfconsole** after having initialized the **msfdb**.
