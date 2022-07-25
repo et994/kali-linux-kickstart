@@ -6,7 +6,7 @@ function target() {
 }
 
 # attacks the target IP address
-function attack() {
+function audit() {
     nmap -A -T4 $1 -oX "$1-nmap-scan.xml"
     xsltproc "$1-nmap-scan.xml" -o "$1-nmap-scan.html" 
     firefox-esr "$1-nmap-scan.html" &
