@@ -39,6 +39,7 @@ wget -qO- https://raw.githubusercontent.com/et994/kali-config/main/kali-custom-p
 
 The **target** function purpose is to append to the end of the `/etc/hosts` file an IP address and its mapping to the hostname `target`.
 For example, after executing `target 10.10.123.234` we can ping that IP address by specifying just the hostname: `ping -c4 target`.
+If we already have a **target** in our hosts file, it will be replaced by the new **target**.
 
 The **audit** function purpose is to scan an IP address using _nmap_, converting the output to an HTML file and viewing it using _firefox-esr_.
 Usage: `audit 10.10.123.234` or in combination with the **target** function, after mapping an IP address with the **target** hostname: `audit target`.
