@@ -23,4 +23,4 @@ wget -qO- https://raw.githubusercontent.com/et994/kali-config/main/kali-custom-p
 ```sh
 sudo apt update && sudo apt install -y space_separated_packages
 ```
-Example:  'sudo apt update && s
+Example:  'sudo apt update && sudo apt install -y gobuster xclip ghidra hashid steghide`
