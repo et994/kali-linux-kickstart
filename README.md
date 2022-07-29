@@ -66,5 +66,25 @@ sudo apt update && sudo apt install -y kali-root-login
 sudo passwd root
 ```
 
+## Installing Docker on Kali Linux
+
+```sh
+sudo apt update && sudo apt install -y docker.io
+```
+
+Let's enable the service:
+
+```sh
+sudo systemctl enable docker --now
+```
+
+### (Optional) Using Docker without `sudo`
+
+```sh
+sudo usermod -aG docker $USER
+```
+
+Now logout and login again.
+
 # Useful stuff
 [SSH GitHub configuration](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
