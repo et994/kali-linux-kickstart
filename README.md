@@ -84,7 +84,7 @@ sudo systemctl enable docker --now
 sudo usermod -aG docker $USER
 ```
 
-Now logout and login again.
+Now logout and in again.
 
 # Useful stuff
 [SSH GitHub configuration](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
